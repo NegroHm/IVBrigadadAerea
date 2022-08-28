@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
 }
 
- 
+
 
 /*nav var*/
 
@@ -44,6 +44,18 @@ nav {
 nav ul {
     float: right;
     margin-right: 20px;
+    list-style: none;
+}
+
+/*Nuevo nav bar*/
+.nav001{
+    display: block;
+    background-color: #d0f0f8;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav ul li {
@@ -51,11 +63,34 @@ nav ul li {
     line-height: 80px;
     margin: 10 5px;
 }
+.nav > li  {
+    float: left;
+    margin: 0px;
+}
+nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    border-radius: 2vh;
+    
+}
+nav li:hover > ul{
+    display: block;
+}
+nav li ul li {
+    position: relative;
+}
+nav li ul li ul{
+    right: -140px;
+    top: 0px;
+}
 
+
+/*FIN*/
 nav ul li a {
     color: rgb(0, 0, 0);
     font-size: 18px;
-    padding: 7px 13px;
+    padding: 5px 10px;
     border-radius: 3px;
     text-transform: uppercase;
 }
@@ -95,46 +130,43 @@ section {
     height: calc(140px - 60px);
 }
 
-@media (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
 @media (max-width: 858px) {
+
+    img {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .checkbtn {
         display: block;
     }
 
     ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+        float: right;
+        margin-right: 20px;
     }
 
     nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        color: rgb(0, 0, 0);
+        font-size: 7px;
+        border-radius: 3px;
+        text-transform: uppercase;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 5px;
+        color: #343434;
     }
 
-    li a:hover,
-    li a.active {
-        background: none;
-        color: red;
+    .enlace {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    li a.active,
+    li a:hover {
+        background: #84c7e2;
+        transition: 1s;
     }
 
     #check:checked~ul {
@@ -142,8 +174,66 @@ section {
     }
 }
 
+
 /*Main*/
 
+
+
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    margin: 0;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
 
 /* Footer */
 
