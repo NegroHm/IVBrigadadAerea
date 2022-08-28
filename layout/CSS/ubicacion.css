@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
 }
 
- 
+
 
 /*nav var*/
 
@@ -95,46 +95,43 @@ section {
     height: calc(140px - 60px);
 }
 
-@media (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
 @media (max-width: 858px) {
+
+    img {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .checkbtn {
         display: block;
     }
 
     ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+        float: right;
+        margin-right: 20px;
     }
 
     nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        color: rgb(0, 0, 0);
+        font-size: 7px;
+        border-radius: 3px;
+        text-transform: uppercase;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 5px;
+        color: #343434;
     }
 
-    li a:hover,
-    li a.active {
-        background: none;
-        color: red;
+    .enlace {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    li a.active,
+    li a:hover {
+        background: #84c7e2;
+        transition: 1s;
     }
 
     #check:checked~ul {
@@ -143,21 +140,24 @@ section {
 }
 
 /*Main*/
-.ubi{
+.ubi {
     margin: 40px;
     justify-content: center;
     text-align: center;
 }
-.map{
+
+.map {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
 }
-.tRecordatorio{
+
+.tRecordatorio {
     margin: 40px;
 }
-.recordatorio{
+
+.recordatorio {
     margin: 40px;
 }
 
