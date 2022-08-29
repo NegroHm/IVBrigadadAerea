@@ -11,6 +11,11 @@
     font-family: 'Cinzel', serif;
     list-style: none;
     box-sizing: border-box;
+
+}
+html{
+    padding: 0px;
+    margin: 0pc;
 }
 
 body {
@@ -29,6 +34,7 @@ header {
     width: 100%;
     height: 100px;
     background-color: #d0f0f8;
+
 }
 
 .interior {
@@ -124,7 +130,38 @@ li a:hover {
 
 /*NAV BAR FIN*/
 /*NAV BAR HACER RESPONSIVE*/
-@media (max-width: 858px) {}
+@media (max-width: 858px) {
+    header{
+        height: 150px;
+    }
+    header .interior{
+        display: grid;
+        grid-template-rows: 50% auto;
+        height: 100%;
+        width: 100%;
+    }
+    .logo{
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navegacion li{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0px;
+        padding-bottom: 15px;
+    }
+    .navegacion ul li a{
+        display: inline-block;
+        font-size: 8.2px;
+    }
+    
+}
 
 /*NAV BAR FIN TOTAL*/
 /* Banner */
@@ -251,6 +288,10 @@ p:hover span {
 .card {
     background-color: rgb(238, 249, 252);
 }
+.mainCards{
+    padding-bottom: 68vh;
+    background-color: rgb(20, 39, 155);
+}
 
 .contenedorDeCards {
     padding-top: 20px;
@@ -261,6 +302,7 @@ p:hover span {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    padding-bottom: 100px;
 }
 
 .contenedorDeCards .card {
@@ -308,6 +350,7 @@ p:hover span {
 
 .contDeMision {
     padding-top: 100px;
+    background-color: rgb(61, 86, 178);
 }
 
 .mision {
@@ -337,11 +380,17 @@ p:hover span {
     color: #000000;
     font-family: 'Aboreto', cursive;
     font-family: 'Cinzel', serif;
+    padding-bottom: 0px;
 }
 
-
+/*Solo para ver como queda estos colores*/
+.conteinerAgregar{
+    background-color: rgb(92, 122, 234);
+}
 
 /*Fin del Main*/
+
+
 
 /* Footer */
 
@@ -375,7 +424,7 @@ footer {
 .box__footer .terms {
     max-width: 350px;
     margin-top: 20px;
-    font-weight: 500;
+    font-weight: 500px;
     color: #7a7a7a;
     font-size: 18px;
 }
@@ -423,6 +472,7 @@ footer {
         width: 100%;
         height: 100%;
     }
+    
 }
 
 /* Fin del Footer */
