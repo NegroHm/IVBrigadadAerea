@@ -13,7 +13,8 @@
     box-sizing: border-box;
 
 }
-html{
+
+html {
     padding: 0px;
     margin: 0pc;
 }
@@ -131,16 +132,18 @@ li a:hover {
 /*NAV BAR FIN*/
 /*NAV BAR HACER RESPONSIVE*/
 @media (max-width: 858px) {
-    header{
+    header {
         height: 150px;
     }
-    header .interior{
+
+    header .interior {
         display: grid;
         grid-template-rows: 50% auto;
         height: 100%;
         width: 100%;
     }
-    .logo{
+
+    .logo {
         justify-content: center;
         align-items: center;
         text-decoration: none;
@@ -149,18 +152,20 @@ li a:hover {
         margin-left: auto;
         margin-right: auto;
     }
-    .navegacion li{
+
+    .navegacion li {
         justify-content: center;
         align-items: center;
         display: flex;
         margin: 0px;
         padding-bottom: 15px;
     }
-    .navegacion ul li a{
+
+    .navegacion ul li a {
         display: inline-block;
         font-size: 8.2px;
     }
-    
+
 }
 
 /*NAV BAR FIN TOTAL*/
@@ -288,30 +293,31 @@ p:hover span {
 .card {
     background-color: rgb(238, 249, 252);
 }
-.mainCards{
-    padding-bottom: 68vh;
-    background-color: rgb(20, 39, 155);
+
+
+.tituloDeConjuntoCards {
+    padding: 30px 0px 10px 60px;
+    font-size: 50px;
+    color: black;
 }
+
 
 .contenedorDeCards {
-    padding-top: 20px;
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
+
 .contenedorDeCards .card {
-    width: 330px;
+    width: 90%;
     height: 430px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
+    margin: 9%;
     text-align: center;
     transition: all 0.25s;
 }
@@ -322,7 +328,7 @@ p:hover span {
 }
 
 .contenedorDeCards .card img {
-    width: 330px;
+    width: 100%;
     height: 220px;
 }
 
@@ -343,6 +349,15 @@ p:hover span {
     color: #3498db;
 }
 
+.fecha {
+    margin-top: 10px;
+    color: #000000;
+    margin-bottom: 10px;
+    top: 80px;
+    left: 10px;
+}
+
+
 /*Fin de la Card Main*/
 
 /*Apartado de mision objetivo y vision*/
@@ -350,7 +365,6 @@ p:hover span {
 
 .contDeMision {
     padding-top: 100px;
-    background-color: rgb(61, 86, 178);
 }
 
 .mision {
@@ -359,7 +373,6 @@ p:hover span {
 }
 
 .mision h1 {
-
     justify-content: center;
     font-size: 65px;
 
@@ -368,7 +381,7 @@ p:hover span {
 
 .mision p {
     padding-top: 10px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     font-size: 40px;
 }
 
@@ -384,7 +397,7 @@ p:hover span {
 }
 
 /*Solo para ver como queda estos colores*/
-.conteinerAgregar{
+.conteinerAgregar {
     background-color: rgb(92, 122, 234);
 }
 
@@ -472,7 +485,7 @@ footer {
         width: 100%;
         height: 100%;
     }
-    
+
 }
 
 /* Fin del Footer */
