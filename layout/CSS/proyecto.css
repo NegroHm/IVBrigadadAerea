@@ -17,6 +17,13 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Aboreto', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
+}
+
 
 
 /*nav var*/
@@ -65,7 +72,7 @@ nav ul li a {
 
 li a.active,
 li a:hover {
-    background: #84c7e2;
+    background: #8ce0e6;
     transition: .5s;
 }
 
