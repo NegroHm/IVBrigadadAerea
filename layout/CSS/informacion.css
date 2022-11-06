@@ -217,6 +217,7 @@ li a:hover {
     width: 50%;
     margin: 10px auto 10px auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .bloqueDeInf h1 {
@@ -226,6 +227,7 @@ li a:hover {
 .bloqueDeInf p {
     font-size: 25px;
     padding: 20px 0px 30px 0px;
+    margin: 10px 20px 10px 20px;  
 }
 
 .bloqueDeInf img {
@@ -262,6 +264,62 @@ li a:hover {
     margin: 10px 10px 10px 10px;
 }
 
+@media (max-width: 858px) {
+    .headercolor {
+        width: 100%;
+    }
+
+    .headerDeMain {
+        height: 150px;
+    }
+
+    .headerDeMain h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .main {
+        display: block;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .informacionMain {
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    .informacionMain p {
+        display: block;
+        font-size: 15px;
+        width: 240px;
+        margin: 10px auto 10px auto;
+        padding: 0px;
+    }
+
+    .informacionMain h1 {
+        font-size: 25px;
+    }
+
+    .bloqueDeInf {
+        /* margin: 10px auto 10px auto; */
+        padding: 0px;
+        margin: 10px 0px 30px 0px;
+        width: 100%;
+    }
+
+    /* fin de la parte superior */
+    /* cards con img */
+    .informacionSecundaria {
+        margin: 0;
+    }
+
+    .cardDeInformacion {
+        margin: 10px auto 10px auto;
+        padding: 10px;
+    }
+}
 
 
 /* Footer */
@@ -346,4 +404,8 @@ footer {
         height: 100%;
     }
 
+    .logo1 img {
+        width: 180px;
+        margin: 10px 10px 10px 59px;
+    }
 }

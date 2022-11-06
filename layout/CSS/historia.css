@@ -222,6 +222,16 @@ section:nth-child(2n) {
     opacity: 1;
 }
 
+.imgDeHstoria {
+    padding-top: 100px;
+    margin-left: 900px;
+    width: 600px;
+    height: 510px;
+    max-width: 600px;
+    max-height: 510px;
+
+}
+
 /* Fin del Main*/
 /* Footer */
 
@@ -299,9 +309,16 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .imgDeHstoria {
+        display: none;
+    }
     footer {
         width: 100%;
         height: 100%;
+    }
+    .box__footer .logo img {
+        width: 180px;
+        margin: 10px 10px 10px -59px;
     }
 
 }

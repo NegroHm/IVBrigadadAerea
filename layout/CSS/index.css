@@ -293,6 +293,76 @@ p:hover span {
 
 
 /*Main*/
+/*bolitas*/
+.bolitasConteiner {
+    display: flex;
+    justify-content: center;
+    background-color: #a1c8f4;
+}
+
+a {
+    color: #000000;
+
+}
+
+.bolas img {
+    margin: 30px 100px 20px 100px;
+    border-radius: 80%;
+    height: 200px;
+    width: 200px;
+}
+
+.bolas h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 858px){
+    .bolitasConteiner{
+        display: block;
+        padding: 25px 0 25px 0;
+    }
+    .bolas img{
+        margin: 30px 50px 20px 100px;
+    }
+}
+
+/*tres img*/
+/* .tresPartes {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin: 10px;
+
+}
+
+.imgs2y3 {
+    display: grid;
+    grid-template-rows: 50% auto;
+}
+
+.img1 img {
+    position: relative;
+    height: 80%;
+    width: 90%;
+    padding: 20px;
+}
+
+.img2 img {
+    width: 90%;
+    height: 80%;
+    padding: 20px;
+}
+
+.textoCentrado {
+    position: absolute;
+
+} */
+
+
 /*Cards*/
 
 
@@ -340,6 +410,7 @@ p:hover span {
 
 
 .contenedorDeCards .card h4 {
+    padding-top: 20px;
     font-weight: 600;
 }
 
@@ -363,6 +434,22 @@ p:hover span {
     left: 10px;
 }
 
+@media (max-width: 858px) {
+    .tituloDeConjuntoCards {
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .contenedorDeCards {
+        display: grid;
+        grid-template-columns: 50% auto;
+        padding: 2px;
+        margin: 5px;
+
+    }
+
+
+}
 
 /*Fin de la Card Main*/
 
@@ -370,7 +457,9 @@ p:hover span {
 
 
 .contDeMision {
-    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 100px 0px 100px 0px;
 }
 
 .mision {
@@ -381,33 +470,52 @@ p:hover span {
 .mision h1 {
     justify-content: center;
     font-size: 65px;
-
-
 }
 
 .mision p {
     padding-top: 10px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    font-size: 40px;
+    font-size: 34px;
     font-family: 'Aboreto', cursive;
     font-family: 'Cinzel', serif;
     font-family: 'Crimson Text', serif;
     font-family: 'EB Garamond', serif;
-
 }
 
 .parrMis {
     text-align: center;
-    margin: 100px;
-    font-size: 60px;
+    margin: 10px;
     padding: 30px;
     color: #000000;
     padding-bottom: 0px;
 }
 
+
+
 /*Solo para ver como queda estos colores*/
 .conteinerAgregar {
     background-color: rgb(92, 122, 234);
+}
+
+@media (max-width: 858px) {
+
+    .mision h1 {
+        font-size: 45px;
+
+    }
+
+    .parrMis {
+        text-align: center;
+        color: #000000;
+        margin: 0px;
+        padding: 20px 20px 20px 20px;
+        font-size: 24px !important;
+
+    }
+    .contDeMision{
+        display: block;
+        margin: 0%;
+    }
 }
 
 /*Fin del Main*/
@@ -479,13 +587,15 @@ footer {
 }
 
 .box__copyright p {
-    
+
     margin-top: 20px;
     color: #7a7a7a;
 }
-.box__copyright a{
+
+.box__copyright a {
     text-decoration: none;
 }
+
 .box__copyright hr {
     border: none;
     height: 1px;
@@ -497,6 +607,13 @@ footer {
         width: 100%;
         height: 100%;
     }
+
+    /* agregara a los otros footers */
+    .box__footer .logo img {
+        width: 180px;
+        margin: 10px 10px 10px -59px;
+    }
+    
 
 }
 

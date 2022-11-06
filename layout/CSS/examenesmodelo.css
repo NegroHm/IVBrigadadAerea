@@ -7,8 +7,12 @@
     list-style: none;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #7eb9f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 p {
@@ -160,37 +164,63 @@ li a:hover {
 
 /*Main*/
 
-.mainExam{
+.mainExam {
     margin: 10px auto 10px auto;
     width: 860px;
 }
 
-.bloqueDeExa{
+.bloqueDeExa {
     justify-content: center;
     text-align: center;
     padding: 50px auto 50px auto;
     margin: 100px 0px 100px 0px;
 }
-.bloqueDeExa h1{
+
+.bloqueDeExa h1 {
     color: black;
+    text-shadow: 4px 3px #ffffffa6;
     font-size: 70px
 }
+
 .bloqueDeExa p {
     font-size: 25px;
 }
-.bloqueDeExa a{
+
+.bloqueDeExa a {
     font-size: 40px;
     text-decoration: black;
     text-decoration: none;
 }
-.bloqueDeExa i{
+
+.bloqueDeExa i {
     border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #51a9f1;
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: #f8f8f844;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
 }
+
+@media screen and (max-width: 800px){
+    .mainExam{
+        width: 100%;
+    
+    }
+    .bloqueDeExa h1{
+        font-size: 30px;
+    }
+    .bloqueDeExa p{
+        margin: 10px;
+        font-size: 23px;
+    }
+    .bloqueDeExa i{
+        margin: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
 /*FOOTER*/
 
 footer {
@@ -199,6 +229,7 @@ footer {
     background-color: #d0f0f8;
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
+    margin-top: auto;
 }
 
 .container__footer {
@@ -272,4 +303,3 @@ footer {
         height: 100%;
     }
 }
-

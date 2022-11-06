@@ -16,6 +16,7 @@ body {
     background-color: #7eb9f5;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    
 }
 
 
@@ -195,6 +196,18 @@ li a:hover {
     margin: 30px;
 }
 
+.cardsDeRecordatorio {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin: 0px;
+    padding: 0px;
+    
+}
+iframe{
+    border-radius: 10px;
+    
+}
+
 .tRecordatorio {
     margin: 50px;
     font-size: 30px;
@@ -204,6 +217,23 @@ li a:hover {
     margin: 50px;
     font-size: 24px;
 }
+
+.recordatorio1 {
+    color: #000000;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .2s ease-in-out, box-shadow .3s ease-in-out;
+    padding: 20px;
+    margin: 10px;
+}
+
+.recordatorio1:hover {
+    box-shadow: inset 900px 0 0 0 #d0f0f8;
+    color: rgb(0, 0, 0);
+
+}
+
+
 
 /* Footer */
 
@@ -281,9 +311,30 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .headercolor {
+        width: 100%;
+    }
+
+    .headerDeMain {
+        height: 150px;
+    }
+
+    .headerDeMain h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .cardsDeRecordatorio {
+        display: block;
+    }
+
     footer {
         width: 100%;
         height: 100%;
     }
 
+    .box__footer .logo img {
+        width: 180px;
+        margin: 10px 10px 10px -59px;
+    }
 }
