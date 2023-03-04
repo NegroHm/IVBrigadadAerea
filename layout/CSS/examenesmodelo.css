@@ -138,7 +138,6 @@ li a:hover {
     .logo {
         justify-content: center;
         align-items: center;
-        text-decoration: none;
         width: 100px;
         height: 100px;
         margin-left: auto;
@@ -189,7 +188,6 @@ li a:hover {
 .bloqueDeExa a {
     font-size: 40px;
     text-decoration: black;
-    text-decoration: none;
 }
 
 .bloqueDeExa i {

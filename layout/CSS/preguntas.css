@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #7eb9f5;
     display: flex;
     flex-direction: column;
@@ -137,7 +137,6 @@ li a:hover {
     .logo {
         justify-content: center;
         align-items: center;
-        text-decoration: none;
         width: 100px;
         height: 100px;
         margin-left: auto;
@@ -169,7 +168,7 @@ li a:hover {
 }
 
 .container-faq {
-    box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .1);
     padding: 30px;
 }
 
@@ -180,7 +179,7 @@ li a:hover {
 }
 
 .container-faq .item-faq {
-    box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .2);
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -199,7 +198,7 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 15px -1px rgba(0,0,0,.2);
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .2);
     width: 40px;
     height: 40px;
     font-size: 1rem;
@@ -208,7 +207,7 @@ li a:hover {
 }
 
 .container-faq .item-faq .question .more:hover {
-    box-shadow: 0 0 15px -1px rgba(0,0,0,.4);
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .4);
 }
 
 .container-faq .item-faq .question span {
@@ -238,7 +237,8 @@ li a:hover {
     top: -10px;
     opacity: .2;
 }
-.answer p{
+
+.answer p {
     padding: 16px;
 }
 
@@ -331,4 +331,3 @@ footer {
         margin: 10px 10px 10px -59px;
     }
 }
-

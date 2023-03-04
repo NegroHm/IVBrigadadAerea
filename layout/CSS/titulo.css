@@ -137,7 +137,6 @@ li a:hover {
     .logo {
         justify-content: center;
         align-items: center;
-        text-decoration: none;
         width: 100px;
         height: 100px;
         margin-left: auto;
@@ -200,17 +199,20 @@ li a:hover {
         height: 700px;
         padding: 0px;
         margin: 0px;
-        
+
     }
-    .boxText{
+
+    .boxText {
         margin: 0px;
         padding: 0px;
     }
-    .boxText p{
+
+    .boxText p {
         margin: 20px auto 20px auto;
         width: 300px;
     }
-    .fondoDeDesc img{
+
+    .fondoDeDesc img {
         margin: 10px;
         width: 370px;
         height: 200px;

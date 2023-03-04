@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    padding: 0%;
+    padding: 0px;
     text-decoration: none;
     font-family: 'Aboreto', cursive;
     font-family: 'Cinzel', serif;
@@ -9,21 +9,17 @@
 }
 
 body {
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
-    background-size: 100% 10%;
     background-color: #7eb9f5;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 header {
     width: 100%;
     height: 100px;
     background-color: #d0f0f8;
-
 }
 
 p {
@@ -164,76 +160,14 @@ li a:hover {
 
 /*NAV BAR FIN TOTAL*/
 
-/*Header del main*/
-.headercolor {
-    background-color: #d0f0f8;
-}
-
-.headerDeMain {
-    padding-top: 40px;
-    display: block;
-    margin: 0px 0px 0px 10%;
-    text-align: left;
-    height: 200px;
-}
-
-.headerDeMain h1 {
-    font-size: 60px;
-}
-
-/*FIN*/
-
-/*Main*/
-
-
-.map {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-}
-
-.cardsDeRecordatorio {
-    display: grid;
-    grid-template-columns: 50% auto;
-    margin: 0px;
-    padding: 0px;
-
-}
-
-iframe {
-    border-radius: 10px;
-
-}
-
-.tRecordatorio {
-    margin: 50px;
-    font-size: 30px;
-}
-
-.recordatorio {
-    margin: 50px;
-    font-size: 24px;
-}
-
-.recordatorio1 {
-    color: #000000;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .2s ease-in-out, box-shadow .3s ease-in-out;
-    padding: 20px;
-    margin: 10px;
-}
-
-.recordatorio1:hover {
-    box-shadow: inset 900px 0 0 0 #d0f0f8;
-    color: rgb(0, 0, 0);
-
-}
+/* MAIN */
 
 
 
-/* Footer */
+/*******/
+
+
+/*FOOTER*/
 
 footer {
     width: 100%;
@@ -241,6 +175,7 @@ footer {
     background-color: #d0f0f8;
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
+    margin-top: auto;
 }
 
 .container__footer {
@@ -309,23 +244,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    .headercolor {
-        width: 100%;
-    }
-
-    .headerDeMain {
-        height: 150px;
-    }
-
-    .headerDeMain h1 {
-        font-size: 30px;
-        margin: 10px;
-    }
-
-    .cardsDeRecordatorio {
-        display: block;
-    }
-
     footer {
         width: 100%;
         height: 100%;

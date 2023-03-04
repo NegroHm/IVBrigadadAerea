@@ -41,6 +41,9 @@ header {
     width: 100%;
     height: 100px;
     background-color: #d0f0f8;
+    position:  fixed;
+    z-index: 10;
+
 
 }
 
@@ -136,7 +139,6 @@ li a:hover {
 }
 
 /*NAV BAR FIN*/
-/*NAV BAR HACER RESPONSIVE*/
 @media (max-width: 858px) {
     header {
         height: 150px;
@@ -152,7 +154,6 @@ li a:hover {
     .logo {
         justify-content: center;
         align-items: center;
-        text-decoration: none;
         width: 100px;
         height: 100px;
         margin-left: auto;
@@ -321,49 +322,16 @@ img:hover {
     transform: scale(1.2);
 }
 
-@media (max-width: 858px){
-    .bolitasConteiner{
+@media (max-width: 858px) {
+    .bolitasConteiner {
         display: block;
         padding: 25px 0 25px 0;
     }
-    .bolas img{
+
+    .bolas img {
         margin: 30px 50px 20px 100px;
     }
 }
-
-/*tres img*/
-/* .tresPartes {
-    display: grid;
-    grid-template-columns: 50% auto;
-    margin: 10px;
-
-}
-
-.imgs2y3 {
-    display: grid;
-    grid-template-rows: 50% auto;
-}
-
-.img1 img {
-    position: relative;
-    height: 80%;
-    width: 90%;
-    padding: 20px;
-}
-
-.img2 img {
-    width: 90%;
-    height: 80%;
-    padding: 20px;
-}
-
-.textoCentrado {
-    position: absolute;
-
-} */
-
-
-/*Cards*/
 
 
 .card {
@@ -422,7 +390,6 @@ img:hover {
 
 .contenedorDeCards .card a {
     font-weight: 500;
-    text-decoration: none;
     color: #3498db;
 }
 
@@ -454,7 +421,6 @@ img:hover {
 /*Fin de la Card Main*/
 
 /*Apartado de mision objetivo y vision*/
-
 
 .contDeMision {
     display: grid;
@@ -490,9 +456,6 @@ img:hover {
     padding-bottom: 0px;
 }
 
-
-
-/*Solo para ver como queda estos colores*/
 .conteinerAgregar {
     background-color: rgb(92, 122, 234);
 }
@@ -512,15 +475,14 @@ img:hover {
         font-size: 24px !important;
 
     }
-    .contDeMision{
+
+    .contDeMision {
         display: block;
         margin: 0%;
     }
 }
 
 /*Fin del Main*/
-
-
 
 /* Footer */
 
@@ -592,10 +554,6 @@ footer {
     color: #7a7a7a;
 }
 
-.box__copyright a {
-    text-decoration: none;
-}
-
 .box__copyright hr {
     border: none;
     height: 1px;
@@ -609,11 +567,12 @@ footer {
     }
 
     /* agregara a los otros footers */
+    /* esto es para que el footer para que quede abajo */
     .box__footer .logo img {
         width: 180px;
         margin: 10px 10px 10px -59px;
     }
-    
+
 
 }
 
