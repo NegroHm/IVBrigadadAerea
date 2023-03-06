@@ -11,6 +11,12 @@
     font-family: 'Cinzel', serif;
     list-style: none;
     box-sizing: border-box;
+
+}
+
+html {
+    padding: 0px;
+    margin: 0pc;
 }
 
 body {
@@ -23,12 +29,22 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
+}
+
+
 /*NAV BAR*/
 
 header {
     width: 100%;
     height: 100px;
     background-color: #d0f0f8;
+    position:  fixed;
+    z-index: 10;
+
+
 }
 
 .interior {
@@ -61,7 +77,7 @@ header {
 
 li a.active,
 li a:hover {
-    background: #50d4dd;
+    background: #8ce0e6;
     border-radius: 10px;
     transition: .3s;
 }
@@ -123,8 +139,41 @@ li a:hover {
 }
 
 /*NAV BAR FIN*/
-/*NAV BAR HACER RESPONSIVE*/
-@media (max-width: 858px) {}
+@media (max-width: 858px) {
+    header {
+        height: 150px;
+    }
+
+    header .interior {
+        display: grid;
+        grid-template-rows: 50% auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo {
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navegacion li {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0px;
+        padding-bottom: 15px;
+    }
+
+    .navegacion ul li a {
+        display: inline-block;
+        font-size: 8.2px;
+    }
+
+}
 
 /*NAV BAR FIN TOTAL*/
 /* Banner */
@@ -245,31 +294,74 @@ p:hover span {
 
 
 /*Main*/
-/*Cards*/
+/*bolitas*/
+.bolitasConteiner {
+    display: flex;
+    justify-content: center;
+    background-color: #a1c8f4;
+}
+
+a {
+    color: #000000;
+
+}
+
+.bolas img {
+    margin: 30px 100px 20px 100px;
+    border-radius: 80%;
+    height: 200px;
+    width: 200px;
+}
+
+.bolas h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 858px) {
+    .bolitasConteiner {
+        display: block;
+        padding: 25px 0 25px 0;
+    }
+
+    .bolas img {
+        margin: 30px 50px 20px 100px;
+    }
+}
 
 
 .card {
     background-color: rgb(238, 249, 252);
 }
 
-.contenedorDeCards {
-    padding-top: 20px;
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+
+.tituloDeConjuntoCards {
+    padding: 30px 0px 10px 60px;
+    font-size: 50px;
+    color: black;
 }
 
+
+.contenedorDeCards {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
 .contenedorDeCards .card {
-    width: 330px;
+    width: 90%;
     height: 430px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
+    margin: 9%;
     text-align: center;
     transition: all 0.25s;
 }
@@ -280,12 +372,13 @@ p:hover span {
 }
 
 .contenedorDeCards .card img {
-    width: 330px;
+    width: 100%;
     height: 220px;
 }
 
 
 .contenedorDeCards .card h4 {
+    padding-top: 20px;
     font-weight: 600;
 }
 
@@ -297,17 +390,42 @@ p:hover span {
 
 .contenedorDeCards .card a {
     font-weight: 500;
-    text-decoration: none;
     color: #3498db;
+}
+
+.fecha {
+    margin-top: 10px;
+    color: #000000;
+    margin-bottom: 10px;
+    top: 80px;
+    left: 10px;
+}
+
+@media (max-width: 858px) {
+    .tituloDeConjuntoCards {
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .contenedorDeCards {
+        display: grid;
+        grid-template-columns: 50% auto;
+        padding: 2px;
+        margin: 5px;
+
+    }
+
+
 }
 
 /*Fin de la Card Main*/
 
 /*Apartado de mision objetivo y vision*/
 
-
 .contDeMision {
-    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding: 100px 0px 100px 0px;
 }
 
 .mision {
@@ -316,30 +434,53 @@ p:hover span {
 }
 
 .mision h1 {
-
     justify-content: center;
     font-size: 65px;
-
-
 }
 
 .mision p {
     padding-top: 10px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);;
-    font-size: 40px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 34px;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
 }
 
 .parrMis {
     text-align: center;
-    margin: 100px;
-    font-size: 60px;
+    margin: 10px;
     padding: 30px;
     color: #000000;
-    font-family: 'Aboreto', cursive;
-    font-family: 'Cinzel', serif;
+    padding-bottom: 0px;
 }
 
+.conteinerAgregar {
+    background-color: rgb(92, 122, 234);
+}
 
+@media (max-width: 858px) {
+
+    .mision h1 {
+        font-size: 45px;
+
+    }
+
+    .parrMis {
+        text-align: center;
+        color: #000000;
+        margin: 0px;
+        padding: 20px 20px 20px 20px;
+        font-size: 24px !important;
+
+    }
+
+    .contDeMision {
+        display: block;
+        margin: 0%;
+    }
+}
 
 /*Fin del Main*/
 
@@ -375,7 +516,7 @@ footer {
 .box__footer .terms {
     max-width: 350px;
     margin-top: 20px;
-    font-weight: 500;
+    font-weight: 500px;
     color: #7a7a7a;
     font-size: 18px;
 }
@@ -408,6 +549,7 @@ footer {
 }
 
 .box__copyright p {
+
     margin-top: 20px;
     color: #7a7a7a;
 }
@@ -423,6 +565,15 @@ footer {
         width: 100%;
         height: 100%;
     }
+
+    /* agregara a los otros footers */
+    /* esto es para que el footer para que quede abajo */
+    .box__footer .logo img {
+        width: 180px;
+        margin: 10px 10px 10px -59px;
+    }
+
+
 }
 
 /* Fin del Footer */

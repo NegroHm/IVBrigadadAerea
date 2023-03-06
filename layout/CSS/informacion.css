@@ -2,7 +2,8 @@
     margin: 0px;
     padding: 0%;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Cinzel', serif;
     list-style: none;
     box-sizing: border-box;
 }
@@ -17,223 +18,301 @@ body {
     box-sizing: border-box;
 }
 
-
-
-/*nav var*/
-
-nav {
-    background: #fff;
-    background-color: #2f2fd8;
-    height: 10px;
-    width: 100%;
+p {
+    font-family: 'Aboreto', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'EB Garamond', serif;
 }
 
-.main1 {
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #d0f0f8;
+
+}
+
+
+/*Header del main*/
+.headercolor {
     background-color: #d0f0f8;
 }
 
-.enlace {
-    position: absolute;
-    padding: 10px 50px;
+.headerDeMain {
+    padding-top: 40px;
+    display: block;
+    margin: 0px 0px 0px 10%;
+    text-align: left;
+    height: 200px;
+}
+
+.headerDeMain h1 {
+    color: black;
+    font-size: 60px;
+}
+
+/*FIN*/
+
+.main {
+    display: grid;
+    grid-template-columns: 70% auto;
+    margin: 1%;
+}
+
+.informacionSecundaria {
+    margin-left: 20px;
+}
+
+.grupoDeListas {
+    margin-bottom: 15px;
+}
+
+.interior {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
 }
 
 .logo {
-    height: 60px;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-    list-style: none;
-}
-
-/*Nuevo nav bar*/
-.nav001{
-    display: block;
-    background-color: #d0f0f8;
-    justify-content: center;
-    text-align: center;
-    border-radius: 15px;
-    margin: 0px;
-    padding: 0px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 10 5px;
-}
-.nav > li  {
     float: left;
-    margin: 0px;
-}
-nav li ul{
-    display: none;
-    position: absolute;
-    min-width: 130px;
-    border-radius: 2vh;
-    
-}
-nav li:hover > ul{
-    display: block;
-}
-nav li ul li {
-    position: relative;
-}
-nav li ul li ul{
-    right: -140px;
-    top: 0px;
+    padding: 5px 20px 0;
 }
 
+.logo img {
+    height: 90px;
+    padding: 10px;
+}
 
-/*FIN*/
-nav ul li a {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    text-transform: uppercase;
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.navegacion {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
 }
 
 li a.active,
 li a:hover {
-    background: #84c7e2;
-    transition: .5s;
+    background: #8ce0e6;
+    border-radius: 10px;
+    transition: .3s;
 }
 
-.checkbtn {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
+.navegacion ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.navegacion ul li:hover {
+    transform: scale(1.1);
+}
+
+.navegacion ul li a {
+    color: #222222;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+}
+
+.navegacion ul li a:hover {
+    color: #0e0ae7;
+    transform: scale(1.1);
+}
+
+.navegacion ul li:hover .hijos {
+    display: block;
+    border-radius: 10px;
+}
+
+.navegacion .submenu .hijos {
     display: none;
+    /*fondo de los menus secun*/
+    background: #d0f0f8;
+    position: absolute;
+    width: 100%;
 }
 
-#check {
-    display: none;
+.navegacion .submenu .hijos li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
 }
 
-.header1 {
-    margin: 0;
-    background-color: #d0f0f8;
-}
-
-.main1 {
+.navegacion .submenu .hijos li a {
     display: block;
 }
 
-section {
-    background-size: cover;
-    background-position: center center;
-    height: calc(140px - 60px);
+/*NAV BAR FIN*/
+/*NAV BAR HACER RESPONSIVE*/
+@media (max-width: 858px) {
+    header {
+        height: 150px;
+    }
+
+    header .interior {
+        display: grid;
+        grid-template-rows: 50% auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo {
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navegacion li {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0px;
+        padding-bottom: 15px;
+    }
+
+    .navegacion ul li a {
+        display: inline-block;
+        font-size: 8.2px;
+    }
+
+}
+
+/*NAV BAR FIN TOTAL*/
+
+/*Main*/
+
+.main {
+    padding: 100px 0px 100px 0px;
+}
+
+.bloqueDeInf {
+    width: 50%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.bloqueDeInf h1 {
+    font-size: 55px;
+}
+
+.bloqueDeInf p {
+    font-size: 25px;
+    padding: 20px 0px 30px 0px;
+    margin: 10px 20px 10px 20px;
+}
+
+.bloqueDeInf img {
+    width: 70%;
+}
+
+/*Parte superior de cards*/
+
+
+/*CARDS*/
+
+.card {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.imgDecardsss img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 10px 10px 10px 10px;
+}
+
+.card h5 {
+    margin: 10px 10px 10px 10px;
 }
 
 @media (max-width: 858px) {
-
-    img {
-        margin: 0px;
-        padding: 0px;
+    .headercolor {
+        width: 100%;
     }
 
-    .checkbtn {
+    .headerDeMain {
+        height: 150px;
+    }
+
+    .headerDeMain h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .main {
         display: block;
-    }
-
-    ul {
-        float: right;
-        margin-right: 20px;
-    }
-
-    nav ul li {
-        color: rgb(0, 0, 0);
-        font-size: 7px;
-        border-radius: 3px;
-        text-transform: uppercase;
-    }
-
-    nav ul li a {
-        font-size: 5px;
-        color: #343434;
-    }
-
-    .enlace {
         margin: 0px;
         padding: 10px;
     }
 
-    li a.active,
-    li a:hover {
-        background: #84c7e2;
-        transition: 1s;
+    .informacionMain {
+        padding: 0px;
+        margin: 0px;
     }
 
-    #check:checked~ul {
-        left: 0;
+
+    .informacionMain p {
+        display: block;
+        font-size: 15px;
+        width: 240px;
+        margin: 10px auto 10px auto;
+        padding: 0px;
     }
-}
 
-
-/*Main*/
-
-
-
-
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
-
-.row {
-    margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row>.column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-    margin: 0;
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: white;
-    padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
+    .informacionMain h1 {
+        font-size: 25px;
     }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
+    .bloqueDeInf {
+        /* margin: 10px auto 10px auto; */
+        padding: 0px;
+        margin: 10px 0px 30px 0px;
         width: 100%;
     }
+
+    /* fin de la parte superior */
+    /* cards con img */
+    .informacionSecundaria {
+        margin: 0;
+    }
+
+    .cardDeInformacion {
+        margin: 10px auto 10px auto;
+        padding: 10px;
+    }
 }
+
 
 /* Footer */
 
@@ -245,7 +324,7 @@ footer {
     background-size: cover;
 }
 
-.container__footer {
+.containerFooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -254,41 +333,41 @@ footer {
     margin-top: 10px;
 }
 
-.box__footer {
+.boxFooter {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.box__footer .logo img {
+.boxFooter .logo img {
     width: 180px;
 }
 
-.box__footer .terms {
+.boxFooter .terms {
     max-width: 350px;
     margin-top: 20px;
-    font-weight: 500;
+    font-weight: 500px;
     color: #7a7a7a;
     font-size: 18px;
 }
 
-.box__footer h2 {
+.boxFooter h2 {
     margin-bottom: 30px;
     color: #343434;
     font-weight: 700;
 }
 
-.box__footer a {
+.boxFooter a {
     margin-top: 10px;
     color: #7a7a7a;
     font-weight: 600;
 }
 
-.box__footer a:hover {
+.boxFooter a:hover {
     opacity: 0.8;
 }
 
-.box__footer a .fab {
+.boxFooter a .fab {
     font-size: 20px;
 }
 
@@ -308,4 +387,17 @@ footer {
     border: none;
     height: 1px;
     background-color: #7a7a7a;
+}
+
+
+@media screen and (max-width: 800px) {
+    footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo1 img {
+        width: 180px;
+        margin: 10px 10px 10px 59px;
+    }
 }
